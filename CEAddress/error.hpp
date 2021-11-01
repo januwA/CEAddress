@@ -14,7 +14,7 @@ namespace ces
     std::string geterr(std::string_view name, std::string_view source, const ces::location& loc, std::string_view msg)
     {
       auto charCount = loc.end.column - loc.begin.column;
-      return std::format("{}:{}\n\n{}\n{}{}", name, msg, source, std::string(loc.begin.column - 1, ' '), std::string(charCount, '~'));
+      return std::format("{}:{}\n\n{}\n{}{}", name, msg, source, std::string((size_t)(loc.begin.column - 1), ' '), std::string(charCount, '~'));
     }
 
     explicit ces_error(std::string_view name, std::string_view source, const ces::location& loc, std::string_view msg = "")
