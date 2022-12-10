@@ -1,4 +1,6 @@
-﻿#include "pch.h"
+﻿#include <iostream>
+#include "pch.h"
+#include "Interpreter.h"
 #include "CEAddress.h"
 
 typedef struct yy_buffer_state* YY_BUFFER_STATE;

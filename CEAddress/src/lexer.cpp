@@ -1,4 +1,4 @@
-#line 5 "lexer.l"
+#line 5 "./CEAddress/gen/lexer.l"
 #include "pch.h"
 
 
@@ -852,11 +852,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "lexer.l"
+#line 1 "./CEAddress/gen/lexer.l"
 
 #include <iostream>
 #include "parser.h"
-#include "error.hpp"
+#include "error.h"
 
 #define YY_DECL ces::parser::symbol_type yylex (std::string_view source)
 ces::location loc;

@@ -1,7 +1,6 @@
 %require "3.7"
 %skeleton "lalr1.cc"
 %language "c++"
-%defines "parser.h"
 %define api.token.constructor
 %define api.value.type variant
 %locations
@@ -15,7 +14,7 @@
 
 %code requires {
 #include "BaseNode.h"
-#include "error.hpp"
+#include "error.h"
 }
 
 %code {

@@ -8,7 +8,7 @@
 %{
 #include <iostream>
 #include "parser.h"
-#include "error.hpp"
+#include "error.h"
 
 #define YY_DECL ces::parser::symbol_type yylex (std::string_view source)
 ces::location loc;

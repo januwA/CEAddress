@@ -31,12 +31,12 @@
 // version 2.2 of Bison.
 
 /**
- ** \file location.hh
+ ** \file ./CEAddress/src/location.hh
  ** Define the ces::location class.
  */
 
-#ifndef YY_CES_LOCATION_HH_INCLUDED
-# define YY_CES_LOCATION_HH_INCLUDED
+#ifndef YY_CES_CEADDRESS_SRC_LOCATION_HH_INCLUDED
+# define YY_CES_CEADDRESS_SRC_LOCATION_HH_INCLUDED
 
 # include <iostream>
 # include <string>
@@ -299,4 +299,4 @@ namespace ces {
 
 } // ces
 
-#endif // !YY_CES_LOCATION_HH_INCLUDED
+#endif // !YY_CES_CEADDRESS_SRC_LOCATION_HH_INCLUDED

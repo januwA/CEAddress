@@ -32,7 +32,7 @@
 
 
 /**
- ** \file parser.h
+ ** \file ./CEAddress/src/parser.h
  ** Define the ces::parser class.
  */
 
@@ -42,12 +42,12 @@
 // especially those whose name start with YY_ or yy_.  They are
 // private implementation details that can be changed or removed.
 
-#ifndef YY_CES_PARSER_H_INCLUDED
-# define YY_CES_PARSER_H_INCLUDED
+#ifndef YY_CES_CEADDRESS_SRC_PARSER_H_INCLUDED
+# define YY_CES_CEADDRESS_SRC_PARSER_H_INCLUDED
 // "%code requires" blocks.
 
 #include "BaseNode.h"
-#include "error.hpp"
+#include "error.h"
 
 
 
@@ -1489,4 +1489,4 @@ switch (yykind)
 
 
 
-#endif // !YY_CES_PARSER_H_INCLUDED
+#endif // !YY_CES_CEADDRESS_SRC_PARSER_H_INCLUDED

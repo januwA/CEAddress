@@ -4,7 +4,7 @@
 #include <map>
 #include <algorithm>
 #include "parser.h"
-#include "error.hpp"
+#include "error.h"
 
 namespace ces {
 
@@ -19,7 +19,7 @@ namespace ces {
     static bool isX64(uint32_t pid, HMODULE hModule);
     static bool isX86(uint32_t pid, HMODULE hModule);
 
-    // »ñÈ¡Ä£¿éÖÐµÄº¯ÊýµØÖ·
+    // ï¿½ï¿½È¡Ä£ï¿½ï¿½ï¿½ÐµÄºï¿½ï¿½ï¿½ï¿½ï¿½Ö·
     static uint8_t* GetProcAddress(uint32_t pid, HMODULE hModule, std::string_view method);
 
     // user32.dll => user32

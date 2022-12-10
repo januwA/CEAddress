@@ -11,11 +11,7 @@ namespace ces
   class ces_error : public std::exception
   {
   public:
-    std::string geterr(std::string_view name, std::string_view source, const ces::location& loc, std::string_view msg)
-    {
-      auto charCount = loc.end.column - loc.begin.column;
-      return std::format("{}:{}\n\n{}\n{}{}", name, msg, source, std::string((size_t)(loc.begin.column - 1), ' '), std::string(charCount, '~'));
-    }
+    std::string geterr(std::string_view name, std::string_view source, const ces::location &loc, std::string_view msg);
 
     explicit ces_error(std::string_view name, std::string_view source, const ces::location& loc, std::string_view msg = "")
       : std::exception(geterr(name, source, loc, msg).data())
